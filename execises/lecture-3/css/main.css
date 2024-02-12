@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+  
+   /* more styles */
+   @import url("my-imported-styles.css");
