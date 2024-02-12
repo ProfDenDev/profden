@@ -1,0 +1,50 @@
+h1,h2,h3
+    {Color: gray
+    }
+main 
+    {color :#e60202}
+
+.h2 {color :red}
+
+.heading {color:green}
+
+ul > li {font-weight: bold;}
+
+section > p {
+    color: red;
+   }
+
+   /* div > p {
+    color: blue;
+   } */
+body > h2:first-of-type {color:indigo}
+
+p.first {color:green}
+p .first  a {
+        color: green;
+        text-size : 32px}
+
+div~p {color: salmon}
+
+/*  #000
+    #0000FF
+    #00FF00
+    #FF0000
+    #FFF
+    #E1FF00 *
+    
+    RGB(0,0,0)
+    RGB(0,0,255) И ТД. ПАРЫ ЧИСЕЛ ПЕРЕВОДИМ В ДЕСЯТИЧНУЮ СИСТЕМУ
+
+    hls(0,0,0)
+
+    rgb
+    RGB(0 0 0 /1)
+    RGB(0 0 255 /1)
+    
+    */
+
+.translucent-box {background-color: hsl(0 100% 50%)}
+html {font-size: 100%;}
+body {font-size: 1.4rem;}
+h1 {font-size: 2.4rem;}
