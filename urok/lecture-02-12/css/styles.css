@@ -1,5 +1,57 @@
-{
+* {
     padding: 0;
     margin: 0;
-    box-sizing: 
+    box-sizing: border-box;
+}
+.img {
+    float: left;
+    /*display: block;*/
+    /*margin: 0 auto 20px;*/
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.w-100 {
+    max-width: 100%;
+}
+/*.img + p {
+    clear: both;
+}*/
+
+#square path {
+    fill: chocolate;
+    stroke: cornflowerblue;
+    stroke-width: 23px;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+    margin: 0 auto 20px;
+    /*background: linear-gradient(#293566, #06f449, #e50fa0);*/
+    /*background: linear-gradient(to left, #293566, #06f449);*/
+    /*background: linear-gradient(to right, #293566, #06f449);*/
+    /*background: linear-gradient(to top, #293566, #06f449);*/
+    /*background: linear-gradient(to bottom, #293566, #06f449);*/
+    /*background: linear-gradient(90deg, #293566, #06f449);*/
+    /*background: linear-gradient(120deg, #293566, #06f449);*/
+    /*background: linear-gradient(45deg, #293566, #06f449);*/
+    /*background: linear-gradient(-45deg, #293566, #06f449);*/
+    /*background: linear-gradient(to right, #293566 30%, #06f449 100%);*/
+
+    /*background: radial-gradient(ellipse at center, #ff0000, #00ff00);*/
+    /*background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);*/
+    /*background: radial-gradient(ellipse at top, #e66465, transparent),
+                radial-gradient(ellipse at bottom, #4d9f0c, transparent);*/
+    background: rgb(127,58,196);
+    background: -moz-linear-gradient(137deg, rgba(127,58,196,1) 0%, rgba(70,252,241,1) 100%);
+    background: -webkit-linear-gradient(137deg, rgba(127,58,196,1) 0%, rgba(70,252,241,1) 100%);
+    background: linear-gradient(137deg, rgba(127,58,196,1) 0%, rgba(70,252,241,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7f3ac4",endColorstr="#46fcf1",GradientType=1);
+}
+
+@media (max-width: 600px) {
+    .w-100 {
+        width: 100%;
+        border-radius: 30px;
+    }
 }

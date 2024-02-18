@@ -1,0 +1,17 @@
+/* exesize 3 */
+body {font-size: 1em;}
+span {font-size: 1.6em;}
+/* 16*1,6=25,6 */
+span > span {font-size: 2.56em;} 
+/* 16*2,56 = 40,96 */
+
+
+/* exesize 4 */
+
+div strong {font-size: 1.6em;}
+div strong > strong {font-size: inherit;}
+
+
+/* exesize 5 */
+ul {
+    list-style-type: square;}

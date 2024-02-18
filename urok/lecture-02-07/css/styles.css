@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.font-icon {
+    margin-left: 20px;
+}
+.font-icon li {
+    display: flex;
+    align-items: center;
+    color: #333;
+    margin-bottom: 20px;
+    gap: 10px;
+    font-family: Arial;
+    /*font-weight: 100;*/
+    /*font-weight: 200;*/
+    /*font-weight: 300;*/
+    /*font-weight: 400;*/
+    /*font-weight: 500;*/
+    /*font-weight: 600;*/
+    /*font-weight: 700;*/
+    /*font-weight: 800;*/
+    /*font-weight: 900;*/
+    font-weight: bold;
+
+    /*font-style: normal;*/
+    /*font-style: italic;*/
+    /*font-style: oblique;*/
+    /*font-style: oblique 20deg;*/
+
+    font-size: 14px;
+    /*font-size: small;*/
+    /*font-size: x-small;*/
+    /*font-size: xx-small;*/
+    /*font-size: medium;*/
+    /*font-size: large;*/
+    /*font-size: x-large;*/
+    /*font-size: xx-large;*/
+    /*font-size: xxx-large;*/
+
+    /*font-variant: normal;*/
+    /*font-variant: small-caps;*/
+
+    /*text-transform: none;*/
+    /*text-transform: capitalize;*/
+    /*text-transform: uppercase;*/
+    /*text-transform: lowercase;*/
+    /*text-transform: full-width;*/
+    /*text-transform: full-size-kana;*/
+
+    text-shadow: rgba(0, 0, 0, 0.7) 3px 4px 4px;
+}
+.font-icon li i {
+    font-size: 30px;
+    text-align: left;
+    color: #ffbb00;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.box__element {
+    flex: 1 1 calc(50% - 20px);
+    height: 200px;
+    background-color: #03c000;
+}
+.box__element + .box__element {
+    background-color: #5825e3;
+}
+.par {
+    /*line-height: normal;*/
+    /*line-height: 10em;*/
+    /*line-height: 10rem;*/
+    /*line-height: 150%;*/
+    line-height: 28px;
+    letter-spacing: 3px;
+
+    /*text-align: start;*/
+    /*text-align: end;*/
+    /*text-align: left;*/
+    /*text-align: center;*/
+    /*text-align: right;*/
+    /*text-align: justify;*/
+
+    /*text-justify: none;*/
+    /*text-justify: auto;*/
+    /*text-justify: inter-word;*/
+    /*text-justify: inter-character;*/
+    /*text-justify: distribute;*/
+
+    text-indent: 20px;
+
+    text-align-last: auto;
+    /*text-align-last: start;*/
+    /*text-align-last: end;*/
+    /*text-align-last: left;*/
+    /*text-align-last: right;*/
+    /*text-align-last: center;*/
+    /*text-align-last: justify;*/
+
+    /*text-wrap: wrap;*/
+    /*text-wrap: nowrap;*/
+    /*text-wrap: balance;*/
+    /*text-wrap: pretty;*/
+    /*text-wrap: stable;*/
+}
+.par a {
+    color: #03c000;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /*text-decoration: none;*/
+    text-decoration: underline;
+    /*text-decoration: line-through;*/
+
+    /*text-underline-position: auto;*/
+    /*text-underline-position: under;*/
+    /*text-underline-position: left;*/
+    /*text-underline-position: right;*/
+}
+.par a:hover {
+    text-decoration: none;
+}
+.par a:active {
+    color: #fb81ff;
+}
+.par a:visited {
+    color: #ffbb00;
+}

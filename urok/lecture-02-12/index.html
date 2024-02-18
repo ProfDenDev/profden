@@ -1,15 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <img
-        class="img"
-        scr="img/free-image.jpg"
-        title="My title"
-        
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!-- .jpg, .jpeg, .png, .apng, .gif, .webp, .avif, .svg -->
+        <img
+            class="img"
+            src="img/free-images.jpg"
+            alt="My alt"
+            title="My title"
+            width="300"
+            data-price="$300"
+        />
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores cumque debitis doloribus et exercitationem, fuga impedit inventore ipsam perferendis rerum sapiente similique tenetur, ullam voluptates! Distinctio est similique tempora!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores cumque debitis doloribus et exercitationem, fuga impedit inventore ipsam perferendis rerum sapiente similique tenetur, ullam voluptates! Distinctio est similique tempora!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores cumque debitis doloribus et exercitationem, fuga impedit inventore ipsam perferendis rerum sapiente similique tenetur, ullam voluptates! Distinctio est similique tempora!</p>
+
+        <h2>Показати зображення в залежності від щільності пікселів</h2>
+        <img
+            src="img/free-images.jpg"
+            srcset="img/free-images-200.jpg 1x,
+            img/free-images-400.jpg 2x,
+            img/free-images-800.jpg 3x"
+        />
+
+        <h2>Показати зображення в залежності від ширини екрану</h2>
+        <img
+            class="w-100"
+            src="img/free-images.jpg"
+            srcset="img/free-images-200.jpg 200w,
+            img/free-images-400.jpg 400w,
+            img/free-images-800.jpg 800w"
+            sizes="(max-width:600px) 400px"
+        />
+
+        <img src="img/facebook.svg" alt="">
+
+        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20.5" r="30" fill="#DFDFDF"/>
+            <path d="M22.3569 15.3227H24V12.6197C23.7165 12.5829 22.7416 12.5 21.6062 12.5C19.2371 12.5 17.6143 13.9075 17.6143 16.4943V18.875H15V21.8967H17.6143V29.5H20.8195V21.8975H23.3281L23.7263 18.8757H20.8188V16.7939C20.8195 15.9205 21.0685 15.3227 22.3569 15.3227Z" fill="#211105"/>
+        </svg>
+
+        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="pink" />
+            <circle cx="150" cy="100" r="80" fill="lightgreen" />
+            <text x="150" y="125" font-size="60" text-anchor="middle" fill="#333">SVG</text>
+        </svg>
+
+        <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">>
+            <rect
+                height="150"
+                width="250"
+                x="30"
+                y="10"
+                rx="20"
+                ry="20"
+                fill="blueviolet"
+            />
+        </svg>
+
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <polygon
+                points="100,10 130,80 200,80 145,120 170,190 100,145 30,190 55,120 0,80 70,80"
+                fill="yellow"
+                stroke="orange"
+                stroke-width="2"
+            />
+        </svg>
+
+        <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_14306_2)">
+                <path d="M40 80.5C62.0914 80.5 80 62.5914 80 40.5C80 18.4086 62.0914 0.5 40 0.5C17.9086 0.5 0 18.4086 0 40.5C0 62.5914 17.9086 80.5 40 80.5Z" fill="#DFDFDF" />
+                <path d="M42.9133 48.4442C42.9267 48.4402 42.9394 48.4349 42.9527 48.4302C51.104 45.1954 48.8491 33 40.0078 33C35.5708 33 32 36.6128 32 40.9987C32 46.5492 37.6282 50.5099 42.9133 48.4442ZM35.5241 46.3705C36.0927 45.416 37.9325 42.7231 41.0729 41.7939C41.7295 43.4663 42.19 45.4173 42.2353 47.6297C39.8557 48.4289 37.3459 47.891 35.5241 46.3705ZM43.2196 47.2124C43.1322 45.0867 42.6978 43.2017 42.0785 41.5686C43.4679 41.352 45.0761 41.4966 46.8999 42.2265C46.5122 44.4002 45.1208 46.2272 43.2196 47.2124ZM47.0047 41.1927C44.996 40.4388 43.2256 40.3448 41.6935 40.6368C41.4566 40.1035 41.2077 39.5909 40.9441 39.119C43.295 38.1812 44.6844 37.038 45.3063 36.4328C46.4041 37.7019 47.0561 39.345 47.0047 41.1927ZM44.5956 35.7209C44.0298 36.2588 42.6971 37.3453 40.4182 38.2338C39.3011 36.4688 38.1066 35.2236 37.3499 34.5264C39.7709 33.5306 42.563 33.9558 44.5956 35.7209ZM36.393 35.015C36.9642 35.5169 38.2181 36.7221 39.4279 38.5858C37.7663 39.1204 35.6829 39.513 33.1491 39.5683C33.5522 37.6393 34.756 36.0049 36.393 35.015ZM33.0223 40.5721C35.8584 40.5261 38.154 40.0789 39.9685 39.4736C40.2194 39.9129 40.4576 40.3915 40.6865 40.8887C37.5267 41.8939 35.5521 44.4888 34.7961 45.6606C33.5762 44.3009 32.9036 42.5265 33.0223 40.5721Z" fill="#008000" />
+            </g>
+            <defs>
+                <clipPath id="clip0_14306_2">
+                    <rect width="80" height="81" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="mySymbol" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </symbol>
+
+            <use href="#mySymbol" x="0" y="0" width="50" height="50" />
+            <use href="#mySymbol" x="60" y="0" width="50" height="50" />
+            <use href="#mySymbol" x="120" y="0" width="50" height="50" />
+        </svg>
+
+        <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect
+                x="10"
+                y="10"
+                width="100"
+                height="100"
+                stroke="blue"
+                fill="purple"
+                fill-opacity="0.1"
+                stroke-opacity="0.95"
+                stroke-width="5"
+            />
+        </svg>
+
+        <svg id="square" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black" />
+        </svg>
+
+        <svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 20 80 C 120 30, 220 30, 320 80" fill="none" stroke="black" stroke-width="2" />
+        </svg>
+
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <path data-name="layer2" d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+    <div class="box"></div>
+    </body>
 </html>
