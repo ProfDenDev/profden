@@ -21,6 +21,25 @@ ul li a:focus   {color:orange;}
 
 /* exesize 4 */
 
-.box ul li  :first-child{color: orange; font-size : 48px}
-.ex5 ul :first-of-type{color: orange;}
-.ex6 ul :last-of-type{color: orange}
+.box4 li:first-child {
+    color:orange;}
+
+
+.box5 ul li :first-of-type{color: orange;}
+.box6 ul :last-of-type{color: orange}
+
+.box7 ul li:not(.first-item) :not(:last-of-type)
+     {color: black; background-color: yellow;}
+
+ol :nth-child(2) {color: blue;}
+ol :nth-child(2n) {color: orange;}
+ol :nth-child(2n+6) {color: rgb(145, 255, 0);}
+
+h1.ua::before {content: "Slava";}
+h1.hero::after{content: " Slava!"}
+
+p.cont::before{content: "\0A7 ";}
+
+/* .num :nth-child(2){color: orange}
+.num :nth-child(2n){color: orange}
+.num :nth-child(2n+6){color: rgb(128, 105, 0)} */
