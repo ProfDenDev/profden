@@ -57,9 +57,21 @@
         main div {
             color: #fff;
             padding: 5vh;
+            
+        }
+        
+        .cont { 
+            border: 3px dotted black;          
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-evenly;
+
+            
+            text-align: center;
+           
         }
 
-        
+
       </style>
 </head>
 <body>
@@ -67,7 +79,7 @@
 	  <h1>CSS Grid Layout</h1>
   </header>
 
-  <main>
+  <main class="cont">
     <div>1</div>
     <div>2</div>
     <div>3</div>
@@ -82,6 +94,68 @@
     <div>12</div>
     <div>13</div>
   </main>
+
+  
+  <!-- 
+    створити grid-контейнер з трьох стовпців шириною 15%, 60%, 25%
+grid-template-columns: 15% 60% 25%;
+
+
+    створити grid-контейнер з трьох рядків висотою 95px 1fr 70px
+grid-template-columns: 95px 1fr 70px;
+
+
+  створити grid-контейнер з трьох рядків висотою 90px 300px 1fr і чотирьох стовпців однакової ширини
+
+         grid-template-rows: 90 px 300px 1fr;
+         grid-template-columns: repeat(4, 1fr);
+
+
+  створити grid-контейнер з чотирьох стовпців однакової ширини та розмістити стовпці в центрі контейнера
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+
+
+  створити grid-контейнер з чотирьох стовпців однакової ширини, що дорівнює 50px та розташуйте стовпці в кінці рядка grid-контейнера
+         grid-template-columns: repeat(4, 50px);
+            justify-content: end;
+
+
+  створити grid-контейнер з чотирьох стовпців однакової ширини, що дорівнює 50px. Розташуйте стовпці, встановивши рівномірну відстань між кожною парою стовпців
+         grid-template-columns: repeat(4, 50px);
+            justify-content: space-between;
+
+  створити grid-контейнер з чотирьох стовпців однакової ширини, що дорівнює 50px. Розташуйте стовпці, встановивши однакові відстані для кожної сторони стовпців
+         grid-template-columns: repeat(4, 50px);
+            justify-content: space-around;
+
+  створити grid-контейнер з чотирьох стовпців однакової ширини, що дорівнює 50px. Призначте рівномірні відстані до обох кінців grid-контейнера та між стовпцями
+         grid-template-columns: repeat(4, 50px);
+            justify-content: space-evenly;
+
+  створити grid-контейнер з 2-х стовпців однакової ширини. Встановіть вирівнювання за замовчуванням для всіх елементів grid-контейнера
+         grid-template-rows: auto auto;
+            justify-items: stretch;
+
+  створити grid-контейнер з 2-х стовпців однакової ширини. Встановіть вирівнювання у напрямку до початкового краю grid-контейнера для всіх елементів.
+         grid-template-rows: auto auto;
+            justify-items: start;
+
+
+  створити grid-контейнер з 2-х стовпців однакової ширини. Встановіть вирівнювання у напрямку центру grid-контейнера для всіх елементів.
+            grid-template-rows: auto auto;
+            justify-items: center;
+
+
+  створити grid-контейнер з 2-х стовпців однакової ширини. Встановіть рівномірну відстань між кожною парою рядків grid-контейнера.
+        grid-template-columns: auto auto;
+            justify-items: space-between;
+
+
+  створити grid-контейнер з 2-х стовпців однакової ширини. Встановіть рівномірну відстань до обох кінців контейнера сітки та між її рядками. -->
+        <!-- grid-template-columns: auto auto;
+            justify-content: space-evenly; -->
+
 
 </body>
 </html>
