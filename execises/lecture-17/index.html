@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+  <script>
+
+//   let x = 3
+//   let y = 4
+
+//   x == 3 true
+//   x === "3" false
+//   x!=5 true
+//   x!== "5" true
+//   X!== 3 false
+//   y > 5 false
+//   y >= 3 true
+//   y < 5 true
+//   y <= 2 false
+//   1 == true true
+  
+    // null == undefined true
+    // NaN == NaN false
+
+
+// let x = 3;
+// let y = 4;
+// let z = 5;
+
+// console.log(x ||= y); 3
+// x || (y = z); 4
+// x &&= y; 5
+// x && (y = z); 4
+// x ??= y; 4
+// x ?? (y = z); 4
+
+
+
+
+// var num = prompt ("enter number", ''); 
+// if  ( num > 3 ) {alert ('The number is too long');}
+//     else if ( num < 3) { alert ('The number is short'); } 
+//     else { alert ('Congratulations, You did it!');};
+
+// 4.Напишіть програму, що пропонує користувачеві ввести назву дня тижня, наприклад - Понеділок. 
+// Якщо користувач ввів Понеділок або Monday, вивести повідомлення "Start of the work week!" 
+// Якщо користувач ввів  або , вивести повідомлення "End of the work week!"
+// В інших випадках вивести повідомлення "A regular day"
+
+// var day = prompt ("Enter Day", ''); 
+// 
+// if  ( day = 'Moday' || 'Понеділок' ) {alert ('Start of the work week!');}
+//     else if ( day = "П'ятниця" || 'Friday') { alert ('End of the work week!'); } 
+//     else { alert ('A regular day');};
+
+
+// switch (day) {
+//         case "Monday" || 'Понеділок':
+//         console.log("Start of the work week!");
+//         break;
+//         case "Friday" || "П'ятниця":
+//         console.log("End of the work week!");
+//         break;
+//         default:
+//         console.log("A regular day");
+
+//     }
+
+
+// 5.За результатами іспиту студент набирає певну кількість балів, що зберігається в змінній score. 
+// Напишіть програму, що аналізує значення score та призначає студенту ступінь grade за таким алгоритмом:
+
+// Якщо студент набрав менше 50 балів, призначити йому ступінь 'F'
+// Якщо студент набрав менше 70 балів, призначити йому ступінь 'D'
+// Якщо студент набрав менше 80 балів, призначити йому ступінь 'C'
+// Якщо студент набрав менше 90 балів, призначити йому ступінь 'B'
+// В іншому випадку призначити йому ступінь 'A'
+
+
+
+function getRandomArbitrary(min, max) {
+	return Math.random() * (max - min) + min;}
+var score = Math.round(getRandomArbitrary(1, 100));
+console.log(score);
+if( score >= 90 ) {
+	console.log('You are have "A"');
+} else if ( score >= 80) {
+	console.log('You are have "B"');
+} else if(score >= 70) {
+	console.log('You are have "C"');
+} else if(score >= 50) {
+	console.log('You are have "D"');
+} else {
+	console.log('You are have "F"');
+}
+
+
+
+ var sc = score <50 ? 'F' : 
+                        sc = score <70 ? 'D' :
+                                         sc = score <80 ? 'C' : 
+                                                     sc = score <90 ? 'B' : 'A';
+
+
+
+console.log('You are have ' , sc)
+
+
+
+// 6.Виправити помилку у наступному коді:
+    let firstName = null;
+let lastName = undefined;
+let username = ( firstName || lastName ) ?? "Guest"; // поставить скобки
+
+console.log(username); // "Guest"
+
+
+
+  </script>
+
+</body>
+</html>
