@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+
+  <!-- - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат:
+     -->
+    <script>
+
+
+    // function checkAge(age) {
+    //   if (age > 18) {
+    //     return true;
+    //   } // else {
+    //     // ...
+    //     // return confirm('Did parents allow you?');
+    // //  }
+    // }
+    var age=19
+
+    
+      console.log (checkAge(age), age);
+  
+
+//  1     Перепишіть функцію checkAge, видаливши else.
+
+
+// function checkAge(age) {
+// if (age <= 18) {
+//         return confirm ('Did parents allow you?');
+//       }
+//     }
+// console.log (checkAge(age));
+
+
+
+// 2 Чи буде функція працювати інакше, якщо видалити else?
+//  <=18 буде  undefined
+
+// 3 Чи є різниця в поведінці цих двох варіантів і чому?
+ // <=18 буде  undefined замість false 
+
+// 4  Наступна функція повертає true, якщо параметр age перевищує 18. В іншому випадку запитує підтвердження та повертає результат.
+
+
+// Перепишіть функцію checkAge, використовуючи '?'
+function checkAge(age) { return age > 18 ? true : confirm('Did parents allow you?');}
+console.log ('? ', checkAge(age));
+
+// Перепишіть функцію checkAge, використовуючи '||'
+function checkAge1(age) {
+return age > 18 || confirm('Did parents allow you?');
+    
+}
+console.log (age, ' || ', checkAge1(age));
+
+
+
+//Чи потрібні дужки навколо age > 18 
+    // необязательно
+
+function checkAge(age) {
+return age > 18 || confirm('Did parents allow you?');
+ 
+}
+console.log (checkAge(age));
+
+function minimum(a,b){
+if (a > b) return b
+ else return a;
+
+}
+
+console.log (minimum(2,5));
+console.log (minimum(3,-1));
+console.log (minimum(1,1));
+
+function minimum1(a,b){
+ return a > b ? b : a;
+}
+console.log (minimum1(2,5),minimum1(3,-1), minimum1(1,1) );
+var x  = 2; var n=3;
+// var x=prompt('x ', Number);
+// var n=prompt('n ', Number);
+function pow(x,n) {
+  if (n > 1) { return (x ** n); }
+  else {return prompt('error')};
+}
+
+console.log ( pow(3, 2) ,
+pow(3, 3) ,
+pow(1, 10), pow(x,n));
+
+// Переписати функцію ask, використовуючи функцію стрілок: (стрелочні функції)
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+
+// Маємо 3 функції.
+function A() { console.log('A was called'); return undefined;}
+function B() { console.log('B was called'); return false;}
+function C() { console.log('C was called'); return "foo";}
+
+A() + console.log(C());
+
+B(),console.log(C());
+
+</script>
+
+
+</body>
+</html>
