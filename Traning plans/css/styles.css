@@ -227,3 +227,24 @@ h3 {
     color: #fff;
     
 }
+
+button {
+    background-color: #48B84A;
+    width: 222px;
+    height: 87px;
+    border-radius: 10px;
+    font: 600 25px / 181% var(--font-family);
+    color: #fff;
+}
+input{
+    width: 715px;
+    height: 87px;
+    background-color: #525252;
+    font: 400 25px / 181% var(--font-family);
+    color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+
+
+    
