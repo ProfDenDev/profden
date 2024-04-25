@@ -96,32 +96,34 @@
         </nav>
         
 
-    </div> //header1
+    </div> 
+    <!--//header1 -->
        
      
     <div class="hero_section" id="home_1">
 
         
-    <h1>The ultimate Online personal</h1>
+        <h1>The ultimate Online personal</h1>
     
-    <h1 class="greenn">Traning plans</h1>
+        <h1 class="greenn">Traning plans</h1>
     
-    <div class="group60">
+        <div class="group60">
     
-        <svg width="243" height="224" viewBox="0 0 243 224" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="112" cy="112" r="112" fill="#48B84A" />
-            <circle cx="112" cy="112" r="103.5" fill="#48B84A" stroke="black" />
-            <circle cx="208" cy="50" r="34" fill="#48B84A" stroke="black" text="PLUS"/>
-            <text stroke="black" transform="matrix(3.4723448753356934,0,0,1.7793461084365845,-454.9114570617676,-18.396688992084137) " xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="6" id="svg_4" y="40.395087" x="183.016706" stroke-opacity="null" stroke-width="0" fill="#ffffff">PLUS</text> 
-          </svg>
-        <p class="group58">get more benefit by joining Membership</p>
+             <svg width="243" height="224" viewBox="0 0 243 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="112" cy="112" r="112" fill="#48B84A" />
+                <circle cx="112" cy="112" r="103.5" fill="#48B84A" stroke="black" />
+                <circle cx="208" cy="50" r="34" fill="#48B84A" stroke="black" text="PLUS"/>
+                <text stroke="black" transform="matrix(3.4723448753356934,0,0,1.7793461084365845,-454.9114570617676,-18.396688992084137) " xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="6" id="svg_4" y="40.395087" x="183.016706" stroke-opacity="null" stroke-width="0" fill="#ffffff">PLUS</text> 
+            </svg>
+            <p class="group58">
+                get more benefit by joining Membership</p>
         </div>
         
         <p>Use our diverse media library to create the yoga ritual that suits you. Moved or relaxed, flexible and individual - just your yoga.</p>
-    <h2>We're here for you</h2>
-       <p>Choose the right one from our constantly growing media library. Whenever you want. Where you want.</p> 
-       <button class="rows-l">🠔</button>
-       <button class="rows-r">➔</button>
+        <h2>We're here for you</h2>
+        <p>Choose the right one from our constantly growing media library. Whenever you want. Where you want.</p> 
+        <button class="rows_h">🠔</button>
+        <button class="rows_h">➔</button>
        <img src="img/home_1.png" alt="Traning Plans">
     </div> <!-- hero section -->
 
@@ -129,49 +131,52 @@
 
     <div class="our_teachers" id="our_teachers">
             <h1>our teachers</h1>
-           
+         
+            <div class="container">
+                <div>
+                <div class="content" id="teach_1">
+                    <h2>
+                        <script>{
+                                const t1 =  (teacher[0].fNameT) + ' ' + (teacher[0].lNameT);
+                                document.getElementById("teach_1").innerHTML = t1;  
+                                        }
+                        </script>
+                    </h2>
 
-          
-    
-        
-    <div class="container">
-        <div>
-          <div class="content" id="teach_1">
-            <h2><script>{
-               
-            const t1 =  (teacher[0].fNameT) + ' ' + (teacher[0].lNameT);
-           document.getElementById("teach_1").innerHTML = t1;  
-            
-            }</script></h2>
+                    <span id="teach_s1">
+                        <script>{
+                            const t1s =  (teacher[0].skile) ;
+                            document.getElementById("teach_s1").innerHTML = t1s;  
+                            }
+                        </script>
+                    </span>
+                </div>
+                </div>
 
-            <span id="teach_s1"><script>{
-               
-            const t1s =  (teacher[0].skile) ;
-           document.getElementById("teach_s1").innerHTML = t1s;  
-            
-            }</script></span>
-          </div>
-        </div>
-        <div>
-          <div class="content">
-            <h2>Alex Smith</h2>
-            <span>CEO Expert</span>
-          </div>
-        </div>
-        <div>
-          <div class="content">
-            <h2>Emily New</h2>
-            <span>Web Designer</span>
-          </div>
-        </div>
-        <div>
-          <div class="content">
-            <h2>Lisa Boley</h2>
-            <span>Marketing Coordinator</span>
-          </div>
-        </div>
-      </div>
-    </div>   /*our_teachers */ 
+                <div>
+                <div class="content">
+                    <h2>Alex Smith</h2>
+                    <span>CEO Expert</span>
+                </div>
+                </div>
+
+                <div>
+                <div class="content">
+                    <h2>Emily New</h2>
+                    <span>Web Designer</span>
+                </div>
+                </div>
+
+                <div>
+                <div class="content">
+                    <h2>Lisa Boley</h2>
+                    <span>Marketing Coordinator</span>
+                </div>
+                </div>
+
+            </div>
+     </div> 
+     
      
     
     <div class="why_us">
@@ -185,13 +190,11 @@
         </p>
         <p>The Sivananda Yoga Vedanta Ashrams and Centres are recognized worldwide for teaching yoga authentically, preserving its purity and tradition dating back several thousand years. They also offer a wide range of programs and even the possibility for spiritual growth through Karma yoga as a temporary or full time staff program participant.
         </p>
-        
-    <div class="why_us_img">
-
-        <img src="img/why_us_1.jpg" alt=""
-            // <style> height: 542px !important</style> >
-
->
+    </div> // "why_us"
+    
+    
+    <div class="why_us_img"> 
+        <img class="img_b" src="img/why_us_1.jpg">    
         <img src="img/why_us_2.jpg" alt="">
         <img src="img/why_us_3.jpg" alt="">
         <img src="img/why_us_4.jpg" alt="">
