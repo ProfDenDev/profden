@@ -186,3 +186,44 @@ body {
   transform: translatey(0%);
   visibility: visible;
 }
+
+.why_us div{
+    width: 843px;
+    height: 745px;
+    margin-left: 170px;}
+.why_us p {
+    font: 400 19px / 174% var(--font-family);
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    }
+
+.why_us img {
+    width: 326px;
+    height: 339px;
+}
+
+.what_people p {
+    font: 400 25px / 174% var(--font-family);
+    color: #fff;}
+
+    .subscribe div 
+
+
+.subscribe h1{
+    font: 400 100px / 125% var(--second-family);
+    text-transform: uppercase;}
+
+.subscribe div{
+    margin: auto;
+    width: 1470px;
+    height: 332px;
+}
+h3 {
+    font: 400 20px / 125% var(--second-family);
+    text-transform: uppercase;
+    color: #fff;
+    
+}
