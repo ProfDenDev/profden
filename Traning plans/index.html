@@ -11,9 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <title>PDD-Traning-Plan</title>
+        
+           
+        
     </head>
     
     <body class="HOME_black">
+        <script src="assets/js/scripts.js"></script>
         <div class="header1">
 
                     <svg width="114" height="96" viewBox="0 0 114 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,13 +116,53 @@
 
     <div class="our_teachers" id="our_teachers">
             <h1>our teachers</h1>
+           
 
           
-    </div> <!--  /*our_teachers  -->
-
+    
         
+    <div class="container">
+        <div>
+          <div class="content" id="teach_1">
+            <h2><script>{
+               
+            const t1 =  (teacher[0].fNameT) + ' ' + (teacher[0].lNameT);
+           document.getElementById("teach_1").innerHTML = t1;  
+            
+            }</script></h2>
+
+            <span id="teach_s1"><script>{
+               
+            const t1s =  (teacher[0].skile) ;
+           document.getElementById("teach_s1").innerHTML = t1s;  
+            
+            }</script></span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Alex Smith</h2>
+            <span>CEO Expert</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Emily New</h2>
+            <span>Web Designer</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Lisa Boley</h2>
+            <span>Marketing Coordinator</span>
+          </div>
+        </div>
+      </div>
+    </div> <!--  /*our_teachers  -->  
         <br><br><br><br>
         <br><br><br><br>  <br>
+       
+       
         <footer>
             <section>
                 
