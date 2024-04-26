@@ -61,7 +61,10 @@ body {
    
     .hero_section {
         width: 1579px;
-        /* height: 1385px; */
+        margin: auto;
+        padding: auto;
+        flex-flow: row;
+          /* height: 1385px; */
 
 
     }
@@ -75,23 +78,51 @@ body {
         color: white;
     }
 
-     h1{
-        margin: auto;
+     .white {
+      width: 1173px;
+      /* padding-left: 171px;   */
+        /* margin: auto; */
         font-size: 120px;
         text-transform: uppercase;
         color: #000;
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
           
     }
+
+    h1{
+        margin: auto;
+        font-size: 120px;
+        text-transform: uppercase;
+        color: #000;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        font: 400 120px / 125% var(--second-family);
+
+    }
     .hero_section .greenn {
-        color :#48B84A; 
-        text-shadow: none;}
+      width: 1035px;  
+      color :#48B84A; 
+        text-shadow: none;
+        margin: auto;
+        font-size: 120px;
+        text-transform: uppercase;
+        font: 700 120px / 125% var(--font-family);
+
+        }
 
     .hero_section h2{
         color: #48B84A; 
-        font-size: 40px;}
+        font-size: 40px;
+      text-align: left;}
     
-    
+   .img_h{
+      
+      width: 898px ;
+      height: 666px;
+      float: right;
+      display: block;
+
+    }
+    /* .hero_section img{max-height:100%; max-width:100%;} */
     
     footer {
     width: 675px;
@@ -214,7 +245,7 @@ body {
 
 .why_us img {
     width: 326px;
-    /* height: 339px; */
+    height: 339px; !!important
 }
 
 .what_people p {
@@ -259,13 +290,16 @@ input{
 }
 
 .group60 {
-    width: 224px;
+    width: 242px;
     height: 224px;
-padding-top: 225px;
-padding-left: 1454px;
+    /* padding-top: 36px;
+    padding-left: 100px; */
+    box-shadow: 0 4px 29px 0 #000;
+    position: absolute;
+    left: 1450px;
+    top: 200px;
 
-
-
+  
 
 }
 
@@ -277,6 +311,7 @@ color: #080c14;
 
 }
 
-.why_us > img_b{
+.img_b{
   height: 542px;
+  
 }
