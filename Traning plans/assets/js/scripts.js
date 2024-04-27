@@ -41,3 +41,6 @@ console.log(teacher);
 
 const t1 =  (teacher[0].fNameT) + ' ' + (teacher[0].lNameT);
 console.log(t1);
+
+const t2 =  (teacher[1].fNameT) + ' ' + (teacher[1].lNameT);
+console.log(t2, (teacher[1].skile));
