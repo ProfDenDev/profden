@@ -63,20 +63,34 @@ body {
         width: 1579px;
         margin: auto;
         padding: auto;
-        flex-flow: row;
-          /* height: 1385px; */
-
-
-    }
+        }
     .hero_section img {
         width: 898px;
         height: 666px;
-    }
+        /* margin-bottom: 36px; */
+        
+        }
    
-    .hero_section p{
-        font-size: 25px;
-        color: white;
-    }
+    .medium {
+      width: 554px;
+      height: 129px;
+      margin-left: 900px;
+      font-size: 25px;
+      color: white;
+      
+      }
+    .medium_2{
+     width: 620px;
+      margin-left: 36px;
+        }
+
+    .medium_2 p{
+          width: 620px;
+          height: 147px;
+          color: #fff;
+          font: 400 28px / 174% var(--font-family);
+
+          }
 
      .white {
       width: 1173px;
@@ -112,14 +126,17 @@ body {
     .hero_section h2{
         color: #48B84A; 
         font-size: 40px;
-      text-align: left;}
+      
+          }
     
    .img_h{
       
       width: 898px ;
       height: 666px;
-      float: right;
+      /* float: left;
+      display: block; */
       display: block;
+      margin-left: auto;
 
     }
     /* .hero_section img{max-height:100%; max-width:100%;} */
@@ -230,23 +247,67 @@ body {
   visibility: visible;
 }
 
-.why_us div{
-    width: 843px;
+.why_us {
+    width: 1600px;
     /* height: 745px; */
-    margin-left: 170px;}
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 100px;
+
+
+  }
+  .why_us h1 {
+    width: 496px;
+    margin: 0;
+    font: 400 100px / 125% var(--second-family);
+  text-transform: uppercase;
+      }
 .why_us p {
+    width: 768px;
     font: 400 19px / 174% var(--font-family);
     text-align: justify;
     color: #fff;
     margin-bottom: 2rem;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
+    /* text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
+    flex: 1 1 auto;
     }
+  .colum1 div {width: 768px;}
+  .why_us .colum1{
+    width: 768px;
+    flex: 1 1 auto;
+        }
+  .colum2 {
+    display: flex;
+    -ms-flex-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+      }
+  .img_b{
+          height: 542px !important;
+         }
 
 .why_us img {
     width: 326px;
-    height: 339px; !!important
-}
+    height: 339px;
+    /* flex: 1 1 auto;  */
+    border-radius: 20px;
+    } 
+.button_More {
+  font: 500 19px / 174% var(--font-family);
+  text-align: center;
+  color: #fff;
+  border: 1px solid #48b84a;
+  width: 167px;
+  height: 55px;
+  background: #000;
+ 
+    }
 
 .what_people p {
     font: 400 25px / 174% var(--font-family);
@@ -292,8 +353,6 @@ input{
 .group60 {
     width: 242px;
     height: 224px;
-    /* padding-top: 36px;
-    padding-left: 100px; */
     box-shadow: 0 4px 29px 0 #000;
     position: absolute;
     left: 1450px;
@@ -311,7 +370,3 @@ color: #080c14;
 
 }
 
-.img_b{
-  height: 542px;
-  
-}
