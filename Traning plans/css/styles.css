@@ -201,7 +201,7 @@ body {
   cursor: pointer;
   box-shadow: 1px 5px 15px #1e0e3e;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .container > div:nth-of-type(1) {
   background: url(../img/teacher_1.jpg) no-repeat 50%/cover;
@@ -216,12 +216,13 @@ body {
   background: url(../img/teacher_4.jpg) no-repeat 50%/cover;
 }
 .container > div .content {
-  font-size: 1.5rem;
+  font-size: 30px;
   color: #fff;
   display: flex;
   align-items: center;
   padding: 15px;
   opacity: 0;
+  
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
@@ -234,7 +235,7 @@ body {
 .container > div .content span {
   display: block;
   margin-top: 5px;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 .container > div:hover {
   flex: 0 0 480px;
@@ -255,7 +256,7 @@ body {
 	height: 48px;
 	margin: 0 10px 10px 0;
 	text-align: center;
-	color: #000;
+	color: #48B84A;
 	background: #fff;
 	border: 1px solid #ccc;
 	border-radius: 24px;
@@ -274,18 +275,20 @@ body {
 
 .teacher_contact{
     
-      border-radius:  28px 0 0 28px;
+      border-radius: 0 28px 28px 0;
       position: absolute;
-      right: 0px;
-      left: 400px;
+      right: -79px;
+      /* left: 400px; */
       top: 30px;
-      z-index: 999; 
+      z-index: 1999; 
       width: 79px;
-      /* height: 232px; */
+      height: 232px;
       background: #48b84a;
       }
 
-
+      .container > div:hover {
+        z-index: 999999;
+     }
 
 .why_us {
     width: 1600px;
@@ -409,3 +412,70 @@ color: #080c14;
 
 }
 
+
+.container > div:hover {
+   z-index: 999999;
+}
+
+
+.colum-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.colum__row {
+    flex: 1 1 50%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* // .соц. для футера */
+.social_f {
+    display: inline-block;
+    margin: auto;}
+.social_f a {
+	display: block;
+	width: 69px;
+	height: 69px;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 24px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+}
+.social_f a:hover {color: #fff;}
+.social_f svg {
+	margin-top: 7px;
+	width: 69px;
+	height: 69px;
+}
+.instagram_f a:hover {background: #3f729b;}
+.linkedin_f a:hover {background: #0e76a8;}
+.twitter_f a:hover {background: #00acee;}
+.youtube_f a:hover {background: #c4302b;}
+
+
+
+.contact{
+      width: 1920px;
+      height: 200px;
+      text-align: center;
+      background-color: #233133 !important ;
+      padding: auto;  
+}
+
+.contact .menu-list{background-color: #233133;}
