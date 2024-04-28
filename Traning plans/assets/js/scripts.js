@@ -39,8 +39,19 @@ const teacher = [{
 
 console.log(teacher);
 
-const t1 =  (teacher[0].fNameT) + ' ' + (teacher[0].lNameT);
-console.log(t1);
+// const t1 =  (teacher[0].fNameT) + ' ' + (teacher[0].lNameT);
+// console.log(t1);
 
-const t2 =  (teacher[1].fNameT) + ' ' + (teacher[1].lNameT);
-console.log(t2, (teacher[1].skile));
+// const t2 =  (teacher[1].fNameT) + ' ' + (teacher[1].lNameT);
+// console.log(t2, (teacher[1].skile));
+
+const s = [];
+for (i = 0; i < teacher.length; i++)
+	{
+	s[i] = (teacher[i].fNameT) + ' ' + (teacher[i].lNameT);
+
+			console.log('s', i, '-', s[i], 'skil ', (teacher[i].skile));
+
+	
+};
+	

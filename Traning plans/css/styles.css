@@ -373,38 +373,7 @@ body {
   
 
 
-.subscribe h1{
-    font: 400 100px / 125% var(--second-family);
-    text-transform: uppercase;}
 
-.subscribe div{
-    margin: auto;
-    width: 1470px;
-    /* height: 332px; */
-}
-h3 {
-    font: 400 20px / 125% var(--second-family);
-    text-transform: uppercase;
-    color: #fff;
-    
-}
-
-.feedback-form > button {
-    background-color: #48B84A;
-    width: 222px;
-    height: 87px;
-    border-radius: 10px;
-    font: 600 25px / 181% var(--font-family);
-    color: #fff;
-}
-input{
-    width: 715px;
-    height: 87px;
-    background-color: #525252;
-    font: 400 25px / 181% var(--font-family);
-    color: rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-}
 
 .group60 {
     width: 242px;
@@ -500,9 +469,12 @@ color: #080c14;
 
 .workshops{
       width: 1585px;
+      text-align: center;
+     
 
 
       }
+
 
 
 .what_people{
@@ -521,8 +493,8 @@ color: #080c14;
 .rows_h {
           width: 54px;
           gap: 7px;
-            background-color: #000;
-          
+          background-color: #000;
+         
            }
 
 .wp_say {
@@ -542,10 +514,11 @@ text-transform: uppercase;
        }
 
 .workshops img{
-  border-radius: 5px;
+border-radius: 10px;
 width: 694px;
 height: 600px;
 background: linear-gradient(180deg, #080c14 0%, #080c14 87.86%);
+
 }    
 
 .button_see{
@@ -556,6 +529,8 @@ background: linear-gradient(180deg, #080c14 0%, #080c14 87.86%);
   width: 261px;
   height: 55px;
   background: #000;
+  margin-top: 30px;
+  margin-left: 18px;
 }
 
 .upcoming{
@@ -571,14 +546,88 @@ background: linear-gradient(180deg, #080c14 0%, #080c14 87.86%);
   text-transform: uppercase;
 }
 .upcoming p {
-  width: 619px;
+  width: 500px;
     font: 400 19px / 174% var(--font-family);
     text-align: justify;
     color: #fff;
-}
+
+    }
 
 .upcoming img{
+  margin-left: 100px ;
   width: 840px;
   height: 712px;
+  border-radius: 10px;
+  
 
+    }
+
+.courses{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    }
+
+
+
+
+
+    .svyaz {
+      position: absolute;
+      padding-left: 1680px;
+      left: 0px;
+    }
+
+    
+.subscribe h1{
+  font: 400 100px / 125% var(--second-family);
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+.subscribe div{
+  margin: auto;
+  width: 1470px;
+  /* height: 332px; */
+}
+h3 {
+  font: 400 20px / 125% var(--second-family);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  
+}
+.feedback-form{
+margin: auto;
+padding-top: 75px;
+padding-left: 300px;
+}
+.feedback-form > button {
+  background-color: #48B84A;
+  width: 222px;
+  height: 87px;
+  border-radius: 10px;
+  font: 600 25px / 181% var(--font-family);
+  color: #fff;
+  margin: auto;
+}
+input{
+  width: 715px;
+  height: 87px;
+  background-color: #525252;
+  font: 400 25px / 181% var(--font-family);
+  color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  margin: auto;
+}
+
+
+
+.plans{
+    width: 1579px;
+    }
+
+.plans h1{
+  font: 400 100px / 125% var(--second-family);
+  text-transform: uppercase;
 }
