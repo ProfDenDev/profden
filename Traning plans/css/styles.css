@@ -63,16 +63,26 @@ body {
         width: 1579px;
         margin: auto;
         padding: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: baseline;
+
+
+
         }
     .hero_section img {
         width: 898px;
         height: 666px;
-        /* margin-bottom: 36px; */
-        
+        margin-left: 700px;
+        /* display: flex;
+      column-gap: normal;  */
         }
    
     .medium {
-      width: 554px;
+      width: 650px;
       height: 129px;
       margin-left: 900px;
       font-size: 25px;
@@ -80,9 +90,15 @@ body {
       
       }
     .medium_2{
-     width: 620px;
+      width: 620px;
+      height: 700px;
       margin-left: 36px;
-        }
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: flex-end;
+       
+    }
 
     .medium_2 p{
           width: 620px;
@@ -132,12 +148,10 @@ body {
    .img_h{
       
       width: 898px ;
-      height: 666px;
+      height: 669px;
       /* float: left;
       display: block; */
-      display: block;
-      margin-left: auto;
-
+     position: absolute;
     }
     /* .hero_section img{max-height:100%; max-width:100%;} */
     
@@ -472,10 +486,99 @@ color: #080c14;
 
 .contact{
       width: 1920px;
-      height: 200px;
+      /* height: 200px; */
+      padding: 20px;
       text-align: center;
       background-color: #233133 !important ;
-      padding: auto;  
+      /* margin-top: auto; */
+        
 }
 
 .contact .menu-list{background-color: #233133;}
+
+
+
+.workshops{
+      width: 1585px;
+
+
+      }
+
+
+.what_people{
+  display: flex;
+
+}
+
+.rows_say {
+  width: 54px;
+  gap: 7px;
+  background-color: #000;
+  margin-top: 50px; 
+     }
+
+
+.rows_h {
+          width: 54px;
+          gap: 7px;
+            background-color: #000;
+          
+           }
+
+.wp_say {
+  width: 1000px;
+  margin-left: 100px;
+  
+
+}
+.wp_say p {
+  margin-left: 50px;
+}
+.wp_say h1{
+  margin-left: 100px;
+  font: 400 100px / 125% var(--second-family) !important;
+text-transform: uppercase;
+
+       }
+
+.workshops img{
+  border-radius: 5px;
+width: 694px;
+height: 600px;
+background: linear-gradient(180deg, #080c14 0%, #080c14 87.86%);
+}    
+
+.button_see{
+  font: 500 19px / 174% var(--font-family);
+  text-align: center;
+  color: #fff;
+  border: 1px solid #48b84a;
+  width: 261px;
+  height: 55px;
+  background: #000;
+}
+
+.upcoming{
+  width: 1500px;
+  /* margin-left: 100px; */
+  /* height: 669px; */
+  display: flex;
+ 
+}
+.upcoming h1{
+  width: 1558px;
+  font: 400 100px / 125% var(--second-family);
+  text-transform: uppercase;
+}
+.upcoming p {
+  width: 619px;
+    font: 400 19px / 174% var(--font-family);
+    text-align: justify;
+    color: #fff;
+}
+
+.upcoming img{
+  width: 840px;
+  height: 712px;
+
+}
